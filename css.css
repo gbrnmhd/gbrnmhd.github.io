@@ -23,7 +23,7 @@
 }
 .bordercontent {
   padding: 10px 20px 10px 20px;
-  width: 240px;
+  width: 245px;
   height: 120px;
 }
 .contact {
@@ -33,7 +33,7 @@
   width: fit-content;
   position: relative;
   bottom: 172px;
-  left: 320px;
+  left: 315px;
 }
 h3 {
   text-align: center;
