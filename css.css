@@ -5,7 +5,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 30px 30px 5px 30px;
-  margin: 10px 550px;
+  margin: auto;
   width: fit-content;
   height: 850px;
 }
@@ -20,6 +20,7 @@
   border-radius: 5px;
   margin: 30px 0px 30px 0px;
   width: fit-content;
+  float: right;
 }
 .bordercontent {
   padding: 10px 20px 10px 20px;
@@ -31,9 +32,7 @@
   border-radius: 5px;
   margin: 30px 0px 30px 0px;
   width: fit-content;
-  position: relative;
-  bottom: 172px;
-  left: 315px;
+  float: left;
 }
 h3 {
   text-align: center;
