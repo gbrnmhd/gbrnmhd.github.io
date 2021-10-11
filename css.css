@@ -54,11 +54,15 @@ a:hover {
   color: blue;
 }
 ol {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
+ul {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
 li {
-  margin-top: 0px;
+  margin-top: 3px;
 }
 footer {
   text-align: center;
