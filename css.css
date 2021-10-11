@@ -15,17 +15,17 @@
 .cardtext {
   font-size: 15px;
 }
+.bordercontent {
+  padding: 10px 20px 10px 20px;
+  width: 245px;
+  height: 120px;
+}
 .social-media {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 30px 0px 30px 0px;
   width: fit-content;
   float: right;
-}
-.bordercontent {
-  padding: 10px 20px 10px 20px;
-  width: 245px;
-  height: 120px;
 }
 .contact {
   border: 1px solid #ccc;
