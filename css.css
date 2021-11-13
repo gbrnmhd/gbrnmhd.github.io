@@ -7,7 +7,7 @@
   padding: 30px 30px 5px 30px;
   margin: auto;
   width: fit-content;
-  height: 850px;
+  height: 470px;
 }
 .cardcontent {
   width: 600px;
@@ -65,10 +65,8 @@ li {
   margin-top: 3px;
 }
 footer {
-  text-align: center;
   font-size: 12px;
   margin-top: 25px;
-  position: fixed;
-  top: 840px;
+  top: 485px;
   right: 570px;
 }
