@@ -1,11 +1,28 @@
-.jumbotron {
-  padding-top: 10rem;
-  background-color: #02c6c62c;
+section {
+  padding-top: 5rem;
+}
+footer {
+  background-color: #02c6c6;
 }
 #gallery {
   background-color: #02c6c62c;
 }
-
-section {
-  padding-top: 5rem;
+#profile {
+  width: 200px;
+}
+.jumbotron {
+  padding-top: 10rem;
+  background-color: #02c6c62c;
+}
+.navbar {
+  background-color: #02c6c6;
+}
+.my-alert {
+  background-color: #02c6c62c;
+}
+.btn-kirim {
+  background-color: #02c6c6;
+}
+.btn-loading {
+  background-color: #02c6c6;
 }
