@@ -27,26 +27,13 @@
       </div>
     </div>
     <img src="wp1.jpg" />
-    <!-- <div class="container">
-      <div class="myclock">
-        <div class="myakun" id="nama">
-          <span id="spannama3" onclick="gantinama()"></span>
-        </div>
-        <div class="myakun" onclick="reverse()">Reset</div>
-        <div class="contjam">
-          <div class="jam">-:-</div>
-          <div class="tanggal">-</div>
-          <div class="ucapan myoverlay" onclick="carigoogle()"><span id="spannama2"></span></div>
-        </div>
-        <div class="shortcut kanan" onclick="toggleFullscreen()">fullscreen</div>
-        <div class="shortcut kiri" onclick="wpblur()">blur</div>
-      </div> -->
+    <div class="container">
       <div class="mywindow" id="myform" style="width: 500px; height: 240px">
         <div class="myheader">Enter Passwprd</div>
         <div class="mybody">
-          <div class="mytitle">Masukkan password  terlebih dahulu</div>
+          <div class="mytitle">Masukkan password terlebih dahulu</div>
           <div class="mycontent">
-            <br />
+            <p>Passwordnya namamu <3</p>
             Password :
             <input class="mytext" type="text" id="mynama" name="nama" />
           </div>
@@ -61,13 +48,29 @@
           <div class="mymini"></div>
           <div class="mymax"></div>
         </div>
-        <div class="myheader" id="mywindowheader">halo <span id="spannama"></span></div>
+        <div class="myheader" id="mywindowheader">halo Tasya</span></div>
         <div class="mybody">
           <div class="mytitle">Lorem, ipsum.</div>
           <div class="mycontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum explicabo deserunt repudiandae ut quo enim quidem voluptatem eos sit porro.</div>
           <div class="mybutton">
             <div class="mybuttonno" onmouseover="move()" onclick="move2()">tidak</div>
             <div class="mybuttonyes" onclick="playVid()">iya</div>
+          </div>
+        </div>
+        <div class="myresize"></div>
+      </div>
+      <div class="mywindow myanimated myhide" id="mywindow2" style="width: 500px; height: 240px">
+        <div class="mycontrol">
+          <div class="myclose" onclick="reverse()"></div>
+          <div class="mymini"></div>
+          <div class="mymax"></div>
+        </div>
+        <div class="myheader" id="mywindowheader">halo Tasya</div>
+        <div class="mybody">
+          <div class="mytitle">Terima Kasih</div>
+          <div class="mycontent">Makasih ya udah mau nerima aku, mimpi apa aku dulu kok bisa-bisanya dapet pacar kamu.</div>
+          <div class="mybutton">
+            <a class="mybuttonyes" href="https://wa.me/628999093934?text=MAUUU" target="_blank">Chatme</a>
           </div>
         </div>
         <div class="myresize"></div>
@@ -89,15 +92,14 @@
       $(window).on("load", function () {
         $(".preload").css("background", "#00000000").css("color", "#FFFFFF00").css("backdrop-filter", "blur(0px)").text("SELESAI").css("z-index", "-2");
       });
-      function check(){
+      function check() {
         var pass = document.getElementById("mynama").value;
-        if(pass == "Tasya"){
-          mywrite()
-        }else{
+        if (pass == "Tasya") {
+          mywrite();
+        } else {
           alert("wrong keyword entry");
-
-       }
-}
+        }
+      }
 
       function init() {
         startTime();
@@ -239,8 +241,14 @@
       vid.onended = function () {
         playAudio();
         $(".vidcont").fadeOut();
-        myclock();
+        thanks();
       };
+      function thanks() {
+        $("#myform").hide();
+        $("#mywindow").hide();
+        $("#myVideo").hide();
+        $("#mywindow2").show();
+      }
       function capital_letter(str) {
         if (!str) {
           str = "noname";

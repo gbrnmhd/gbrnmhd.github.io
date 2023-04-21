@@ -179,6 +179,7 @@ img {
   bottom: 20px;
   right: 20px;
 }
+a,
 .mybuttonyes,
 .mybuttonno {
   display: inline-block;
@@ -207,6 +208,9 @@ img {
 }
 .mybuttonno:hover {
   background: #ededed;
+}
+a {
+  text-decoration: none;
 }
 .myresize {
   width: 15px;
