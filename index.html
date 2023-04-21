@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <link rel="icon" href="https://gamepedia.cursecdn.com/minecraft_gamepedia/a/a7/Heart.svg?version=dac1a46352ab4c25ad78a3cef0ceea86" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+
   </head>
   <body onload="init()">
     <audio id="myAudio">
@@ -51,10 +54,10 @@
         <div class="myheader" id="mywindowheader">halo Tasya</span></div>
         <div class="mybody">
           <div class="mytitle">Lorem, ipsum.</div>
-          <div class="mycontent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis dolore eligendi saepe, doloremque non repellendus tempora sequi, similique deleniti suscipit quibusdam, rem aperiam praesentium maiores facilis ipsa ad itaque!</div>
+          <div class="mycontent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem saepe consectetur laudantium, suscipit neque dicta quo dolorum assumenda quos, nesciunt similique, dolores mollitia numquam adipisci deleniti voluptas reiciendis explicabo soluta?</div>
           <div class="mybutton">
             <div class="mybuttonno" onmouseover="move()" onclick="move2()">tidak</div>
-            <div class="mybuttonyes" onclick="playVid()">iya</div>
+            <div class="mybuttonyes" onclick="playVid()">Mau</div>
           </div>
         </div>
         <div class="myresize"></div>
@@ -67,8 +70,8 @@
         </div>
         <div class="myheader" id="mywindowheader">halo Tasya</div>
         <div class="mybody">
-          <div class="mytitle">Terima Kasih</div>
-          <div class="mycontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nihil maiores! Ratione ex vero sequi est temporibus natus nostrum eligendi delectus, praesentium ipsa quo quae modi harum dolore laboriosam mollitia.</div>
+          <div class="mytitle">Lorem, ipsum.</div>
+          <div class="mycontent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem dicta quae explicabo consequuntur! Labore iste, accusamus deleniti necessitatibus iusto impedit nisi fuga quo tempora sunt at sed tempore, perferendis dolores?</div>
           <div class="mybutton">
             <a class="mybuttonyes" href="https://wa.me/628999093934?text=MAUUU" target="_blank">Chatme</a>
           </div>
@@ -76,17 +79,10 @@
         <div class="myresize"></div>
       </div>
     </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
-      /*
-
-			referensi
-
-	  		https://www.w3schools.com/howto/howto_js_draggable.asp
-	  		https://stackoverflow.com/questions/2310734/how-to-make-html-text-unselectable
-	  		http://stackoverflow.com/questions/8960193/how-to-make-html-element-resizable-using-pure-javascript/33523184
-
-	  		*/
       namaku = localStorage.getItem("nama");
       blur = "true";
       $(window).on("load", function () {
@@ -273,180 +269,7 @@
         $("#myform").hide();
         $("#mywindow").show();
         resetposisi();
-      }
-      // function reverse() {
-      //   stopOpening();
-      //   $("#myform").fadeIn();
-      //   $("#mywindow").hide();
-      //   $(".myclock").hide();
-      //   if (blur == "false") {
-      //     wpblur();
-      //   }
-      //   localStorage.clear();
-      // }
-
-      // function gantinama() {
-      //   nama = $("#spannama3").text();
-      //   $("#nama *").remove();
-      //   $("#nama").append(
-      //     "<input type='text' id='textnama' value='" +
-      //       nama +
-      //       "' style='background:#00000000; color:#FFF; outline: none; box-sizing:border-box; border: 0px solid #000;' placeholder='nama' autofocus></input><span id='oke' style='transition: all ease 0.3s; border-radius:5px; width:30px; height:25px; margin-top:2.5px; line-height:25px; position:absolute; right:3px;' onclick='gantinamaok()'>oke</span>"
-      //   );
-      //   textnama = document.querySelector("#textnama");
-      //   textnama.autofocus = true;
-      //   textnama.setSelectionRange(0, textnama.value.length);
-      //   textnama.addEventListener("keypress", function (e) {
-      //     if (e.key === "Enter") {
-      //       gantinamaok();
-      //     }
-      //   });
-      // }
-      // function gantinamaok() {
-      //   textnama = document.querySelector("#textnama");
-      //   textnama.autofocus = false;
-      //   nama = $("#textnama").val();
-      //   nama = capital_letter(nama);
-      //   localStorage.setItem("nama", nama);
-      //   $("#nama *").remove();
-      //   $("#nama").append('<span id="spannama3" onclick="gantinama()">' + localStorage.getItem("nama") + "</span>");
-      // }
-      // cari = true;
-      // selesai = false;
-      // function carigoogle() {
-      //   if (cari) {
-      //     cari = false;
-      //     selesai = false;
-      //     $(".ucapan").text("");
-      //     $(".ucapan *").remove();
-      //     $(".ucapan").append(
-      //       "<input type='text' id='textcari' style='background:#00000000; width:300px; transform:translateX(-70px); color:#000; outline: none; box-sizing:border-box; border: 0px solid #000; font-size:20px' placeholder='cari di sini' autofocus></input><span class='tombolcari'; style='transition: all ease 0.3s; border-radius:10px; width:60px; height:50px; top:calc(50% - 25px); right:90px; line-height:50px; position:absolute;' onclick='cariok()'>cari</span><span class='tombolcari'; style='transition: all ease 0.3s; border-radius:10px; width:60px; height:50px; top:calc(50% - 25px); right:20px; line-height:50px; position:absolute;' onclick='caribatal()'>batal</span>"
-      //     );
-      //     document.querySelector("#textcari").addEventListener("keyup", function (e) {
-      //       if (e.key === "Enter") {
-      //         cariok();
-      //       }
-      //       if (e.key === "Escape") {
-      //         caribatal();
-      //       }
-      //     });
-      //     document.querySelector("body").addEventListener("keyup", function (e) {
-      //       if (e.key === "Escape") {
-      //         caribatal();
-      //       }
-      //     });
-      //   }
-      //   if (selesai) {
-      //     cari = true;
-      //   }
-      // }
-      // function cariok() {
-      //   window.open("https://www.google.com/search?q=" + $("#textcari").val());
-      //   caribatal();
-      // }
-      // function caribatal() {
-      //   $(".ucapan *").remove();
-      //   $(".ucapan").append('<span id="spannama2"></span>');
-      //   var today = new Date();
-      //   var h = today.getHours();
-      //   if (h > 23) tulis("malam", "seharusnya kamu sudah tidur");
-      //   else if (h > 19) tulis("malam", "waktunya mengisi energi");
-      //   else if (h > 18) tulis("petang", "selamat menikmati senja");
-      //   else if (h > 14) tulis("sore", "selamat menjalani hari");
-      //   else if (h > 13) tulis("siang", "tetap semangat");
-      //   else if (h > 9) tulis("siang", "selamat bekerja");
-      //   else if (h > 4) tulis("pagi", "selamat beraktivitas");
-      //   else tulis("malam", "seharusnya kamu sudah tidur");
-      //   selesai = true;
-      // }
-      // function resetposisi() {
-      //   mywindow.style.top = "calc(50% - " + mywindow.clientHeight / 2 + "px)";
-      //   mywindow.style.left = "calc(50% - " + mywindow.clientWidth / 2 + "px)";
-      // }
-      // document.querySelector("#mynama").addEventListener("keypress", function (e) {
-      //   if (e.key === "Enter") {
-      //     mywrite();
-      //   }
-      // });
-      // function myclock() {
-      //   $("#spannama3").text(localStorage.getItem("nama"));
-      //   localStorage.setItem("checked", "yoi");
-      //   $("#myform").hide();
-      //   $("#mywindow").hide();
-      //   $("#myVideo").hide();
-      //   $(".myclock").show();
-      // }
-      // jalan = false;
-      // function startTime() {
-      //   var today = new Date();
-      //   var h = today.getHours();
-      //   var m = today.getMinutes();
-      //   var s = today.getSeconds();
-      //   h = checkTime(h);
-      //   m = checkTime(m);
-      //   s = checkTime(s);
-      //   document.querySelector(".jam").innerHTML = h + ":" + m;
-      //   var t = setTimeout(startTime, 500);
-      //   mytanggal();
-      //   if (cari) {
-      //     if (h > 23) tulis("malam", "seharusnya kamu sudah tidur");
-      //     else if (h > 18) tulis("malam", "waktunya mengisi energi");
-      //     else if (h > 17) tulis("petang", "selamat menikmati senja");
-      //     else if (h > 14) tulis("sore", "selamat menjalani hari");
-      //     else if (h > 13) tulis("siang", "tetap semangat");
-      //     else if (h > 9) tulis("siang", "selamat bekerja");
-      //     else if (h > 4) tulis("pagi", "selamat beraktivitas");
-      //     else tulis("malam", "seharusnya kamu sudah tidur");
-      //     if (h > 0) document.querySelector("img").src = "wp1.jpg";
-      //   }
-      // }
-      // function tulis(waktu, ucapan) {
-      //   $("#spannama2").text("Selamat " + waktu + " " + localStorage.getItem("nama") + ", " + ucapan + ".");
-      // }
-      // function checkTime(i) {
-      //   if (i < 10) {
-      //     i = "0" + i;
-      //   }
-      //   return i;
-      // }
-      // var elem = document.documentElement;
-      // fs = false;
-      // function toggleFullscreen() {
-      //   if (window.innerHeight == screen.height) {
-      //     fs = true;
-      //   } else {
-      //     fs = false;
-      //   }
-      //   if (fs) {
-      //     fs = false;
-      //     if (document.exitFullscreen) {
-      //       document.exitFullscreen();
-      //     } else if (document.msExitFullscreen) {
-      //       document.msExitFullscreen();
-      //     }
-      //   } else {
-      //     openFullscreen();
-      //   }
-      // }
-      // function mytanggal() {
-      //   var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-      //   var bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember"];
-      //   var d = new Date();
-      //   var dayName = hari[d.getDay()];
-      //   var monthName = bulan[d.getMonth()];
-      //   tanggal = dayName + ", " + d.getDate() + " " + monthName;
-      //   $(".tanggal").text(tanggal);
-      // }
-      // function wpblur() {
-      //   $(".container").toggleClass("myoverlay");
-      //   localStorage.setItem("blur", blur);
-      //   if (blur == "true") {
-      //     blur = "false";
-      //   } else {
-      //     blur = "true";
-      //   }
-      // }
-      function playAudio() {
+      }function playAudio() {
         var x = document.getElementById("myAudio");
         x.volume = 0.15;
         x.play();
